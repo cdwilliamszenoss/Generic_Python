@@ -1,0 +1,15 @@
+#!/bin/env python
+
+class MyClass(object):
+  ''' Creates a new object and deletes object '''
+  def __init__(self,name="New_Object"):
+    self.name=name
+    print(self.name, 'born')
+
+
+  def __del__(self):
+    print (self.name, 'died')
+
+myObject = MyClass()
+
+print (myObject.name)
